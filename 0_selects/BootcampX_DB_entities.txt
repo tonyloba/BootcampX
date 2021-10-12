@@ -12,14 +12,14 @@ assistance_requests
 We're going to start off simple and just focus on the queries for two entities: students and cohorts.
 
 A cohort will have the following attributes:
-// COHORT:
+// COHORTS:
 id: A unique identifier
 name: The name of the cohort
 start_date: The cohorts' start date
 end_date: The cohorts' end date
 
 A student will have the following attributes:
-//Student:
+//StudentS:
 id: A unique identifier
 name: The full name of the student
 email: The students' email address
@@ -31,7 +31,7 @@ cohort_id: The id of the cohort that the student is enrolled in
 
 
 An assignment will have the following attributes:
-// Assignment: 
+// AssignmentS: 
 id: A unique identifier
 name: The name of the assignment
 content: The written content body of the assignment
@@ -40,7 +40,7 @@ chapter: The order that the assignment will appear in the day.
 duration: The average time it takes a student to finish
 
 An assignment_submission will have the following attributes:
-// Assignment_submission:
+// Assignment_submissions:
 id: A unique identifier
 assignment_id: The id of the assignment
 student_id: The id of the student
