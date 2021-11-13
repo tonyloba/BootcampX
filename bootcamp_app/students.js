@@ -20,7 +20,9 @@ const cohortInput = process.argv[2];
 
 const cohortLimit = process.argv[3] || 5;
 
-pool.query(sqlQuery,[`%${cohortInput}%`,cohortLimit])
+const values = [`%${cohortInput}%`,cohortLimit];
+
+pool.query(sqlQuery,values)
 .then(res => {
   // console.log(res.rows);
   res.rows.forEach(user => {
